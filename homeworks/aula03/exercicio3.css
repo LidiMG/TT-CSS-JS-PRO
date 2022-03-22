@@ -1,0 +1,159 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body{
+    background: rgb(61, 2, 61);
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat';
+    color: bisque;
+}
+
+header{
+    background: transparent;
+    height: 200px;
+}
+
+.cabecalho{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.logo{
+    height: 90px;
+    max-width: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: calc(100vh-130px);
+    /* 100vh pega o todo da tela e o menos (-) desconsidera aquela parte da altura */
+}
+
+.menu{
+    float: right;
+    margin-right: 40px;
+}
+
+.menu a{
+    color: white;
+    background: transparent;
+    padding: 60px 20px 0 0;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    text-shadow: 
+    0 0 7px #fff,  
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px red,
+    0 0 84px red,
+    0 0 102px red,
+    0 0 151px red;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    background: #FFB92F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.card h1{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: black;
+    margin-top: 40px;
+}
+
+.card h2{
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 26px;
+    color: black;
+    margin-top: -30px;
+}
+
+.card h3{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color:rgb(51, 94, 236);
+    margin-top: -50px;
+}
+
+.card span{
+    font-size: 20px;
+}
+
+.detalhes{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: space-around;
+}
+
+.detalhes-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.detalhes-item img{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.detalhes-item p{
+    font-weight: 600;
+    color: rgb(51, 94, 236);
+}
+
+#direto{
+    height: 700px;
+}
+
+.button{
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: #00396B;
+    color: bisque;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.button:hover{
+    color: bisque;
+    background: darkred;
+}
+
+.card-top{
+    height: 600px;
+    position: relative;
+}
+
+.card-icone{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

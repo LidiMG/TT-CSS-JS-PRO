@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+$fonte-primaria: 'Montserrat';
+$sizeh1: 36px;
+$sizeh2: 38px;
+$sizeh3: 16px;
+$size-span: 20px;
+$font-weight-basic: 600;
+$line-height-high: 44px;
+$line-height-normal: 26px;
+
+@mixin destaque {
+    font-size: 36px;
+    line-height: $line-height-high;
+    font-weight: $font-weight-basic;
+}
+
+@mixin basico{
+    line-height: $line-height-normal;
+    font-weight: $font-weight-basic;
+}
+
+body{
+    font-family: $fonte-primaria;
+}
+
+.menu-link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: $sizeh1;
+    line-height: $line-height-high;
+}
+
+.card{
+    h1{
+        @include destaque;
+    }
+    h2{
+        @include basico;
+        font-size: $sizeh2;
+    }
+    h3{
+        @include basico;
+        font-size: $sizeh3;
+    }
+    span{
+        font-size: $size-span;
+    }
+}
+
+.detalhes-item p {
+    font-weight: $font-weight-basic;
+}
+
+.botao{
+    text-decoration: none;
+    font-weight: $font-weight-basic;
+}
