@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: rgba(238, 227, 227, 0.973);
+  color: black;
+}
+
+#header {
+  background: #C4C4C4;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+nav .title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50px;
+  width: 500px;
+}
+nav .title h1 {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 36px;
+  color: #f1f0f0;
+  position: relative;
+  top: 16px;
+}
+
+.logo {
+  max-width: 100%;
+  height: 50px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-video {
+  width: 1024px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-video {
+    width: 97%;
+  }
+}
+
+.video-principal {
+  width: 650px;
+  height: 400px;
+  background: #C4C4C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-principal .video {
+  width: 100%;
+  height: 100%;
+}
+.video-principal .video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.videos-menores {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .videos-menores {
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;
+  }
+}
+
+.conteudo-menor {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  height: 180px;
+  margin-bottom: 20px;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .conteudo-menor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.conteudo-menor-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.conteudo-menor-video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.sumir {
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .sumir {
+    display: inline;
+    margin: 10px;
+  }
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 12px;
+}

@@ -1,5 +1,157 @@
-@import "reset";
-@import "colors";
-@import "fonts";
-@import "forms";
-@import "images";
+@import 'reset';
+@import 'variaveis';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body{
+    width: 100%;
+    height: 100%;
+    background: $cor-fundo;
+    font-family: $fonte-primaria;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: $cor-textoM;
+    font-size: $size-span;
+    line-height: $line-height-high;
+    padding: 0 10px;
+}
+
+.logo{
+    max-width: 100%;
+    height: 106px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.primeira{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 800px;
+}
+
+.segunda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 800px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+}
+  
+.card{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    background: $cor-card;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px;
+    h1{
+        @include destaque;
+        color: $cor-texto2;
+    }
+    h2{
+        @include basico;
+        color: $cor-texto2;
+        font-size: $sizeh2;
+    }
+    h3{
+        @include basico;
+        color: $cor-texto3;
+        font-size: $sizeh3;
+    }
+    span{
+        font-size: $size-span;
+    }
+}
+  
+.card-top{
+    height: 600px;
+    position: relative;
+}
+  
+.detalhes{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: space-around;
+}
+  
+.detalhes-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+   
+.botao{
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    background: $cor-botao;
+    color: $cor-textoM;
+    text-align: center;
+    text-decoration: none;
+    font-weight: $font-weight-basic;
+}
+
+.card-icone{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.detalhes-item{
+    img{
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+    }
+    p{
+        color: $cor-texto3;
+        font-weight: $font-weight-basic;
+    }
+}
+
+.bloco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60%;
+    width: 60%;
+    border: 1px solid orangered;
+}
+.etiqueta{
+    width: 200px;
+    height: 300px;
+    
+    background: $cor-card;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px;
+}

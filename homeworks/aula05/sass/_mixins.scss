@@ -1,0 +1,10 @@
+@mixin destaque {
+    font-size: 36px;
+    line-height: $line-height-high;
+    font-weight: $font-weight-basic;
+}
+
+@mixin basico{
+    line-height: $line-height-normal;
+    font-weight: $font-weight-basic;
+}

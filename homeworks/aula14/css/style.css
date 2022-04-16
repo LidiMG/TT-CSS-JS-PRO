@@ -1,0 +1,107 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #333;
+    margin: 0;
+}
+
+.pageTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 95vw;
+}
+
+#pageTitle{
+    font-family: 'IM Fell English SC', serif;
+    font-size: 36px;
+    color: rgb(233, 210, 5);
+
+}
+
+.container{
+    width: 95vw;
+    height: 70vh;
+    margin-left: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 185px;
+    height: 420px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    width: 180px;
+    height: 260px;
+}
+
+.poster{
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+    background-color: beige;
+    width: 160px;
+    max-height: 190px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+.title{
+    color: black;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.year,
+.type,
+.imdbID{
+    color: black;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 95vw;
+}
+
+#enviar{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    background: transparent;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: bisque;
+}
+
+#enviar:hover{
+    color: black;
+    background: rgba(255, 255, 255, 0.329);
+}

@@ -1,0 +1,34 @@
+/* Definições da seção Home */
+h1{
+    font-size: 40px;
+    margin: 10px auto auto 70px;
+}
+p{
+    font-size: 16px;
+    margin: 10px 30px auto 70px;
+}
+
+.redes-sociais{
+    margin: 70px auto auto 70px;
+}
+
+.redes-sociais a{
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.redes-sociais a:hover{
+    border: 1px solid;
+    /* border-image: conic-gradiente(grey 20deg, transparent, 120deg); */
+    /* transition: 0.2s ease-in-out; */
+}
+
+.foto{
+    margin: 50px auto auto 0px;
+}
+
+.foto img{
+    transform: rotateZ(10deg);
+}

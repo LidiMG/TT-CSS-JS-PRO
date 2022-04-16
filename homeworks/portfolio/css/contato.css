@@ -1,0 +1,76 @@
+.formulario{
+    margin: 30px auto auto 40px;
+}
+
+.formulario form input{
+    width: 500px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid bisque;
+    border-radius: 10px;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: bisque;
+    padding-left: 20px;
+    outline: none;
+}
+
+input::placeholder{
+    color: bisque;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.formulario form textarea{
+    width: 500px;
+    border: 1px solid bisque;
+    border-radius: 10px;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: bisque;
+    padding-top: 10px;
+    padding-left: 20px;
+    outline: none;
+}
+
+textarea::placeholder{
+    color: bisque;
+    position: absolute;
+}
+
+.formulario button{
+    width: 70px;
+    height: 40px;
+    float: right;
+    margin-right: 40px;
+    border: 1px solid bisque;
+    border-radius: 10px;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: bisque;
+}
+
+.formulario button:hover{
+    color: bisque;
+    background: #912828;
+}
+
+.mapa iframe{
+    width: 400px;
+    height: 300px;
+    border: 0;
+    border-radius: 2%;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+.erro{
+    float: left;
+    margin-top: 3px;
+    font-family: 'Poppins', sans-serif;
+    color: bisque;
+}
+
+.input-erro{
+    border: 2px dashed yellow !important;
+}

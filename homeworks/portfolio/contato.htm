@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/contato.css">
+
+</head>
+<body>
+    
+    <header>
+
+        <div class="container">
+           <img src="img/logotipo_dev.png" alt="Logotipo">
+
+            <nav class="menu">
+                <a href="index.htm">HOME</a>
+                <a href="contato.htm">CONTATO</a>
+            </nav>
+
+        </div>    
+    </header>
+
+    <section>
+        <aside>
+            <nav class="formulario">
+                <!-- onSubmit: é exclusivo da tag FORM e só é executado em qualquer tentativa de submeter o form. Ele precisa do "return" antes da função para poder repassar ao formulário se ele pode ou não seguir adiante. -->
+                <form action="" method="post" onsubmit="salvar()">
+                    <input type="text" placeholder="Digite seu nome" name="nome" id="nome">
+                    <br>
+                    <input type="email" placeholder="Digite seu e-mail" name="email" id="email">
+                    <br>
+                    <textarea name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Digite sua mensagem"></textarea>
+                    <br>
+                    <p class="erro"></p>
+                    <button type="submit">Enviar</button>
+                </form>
+            </nav>
+        </aside>
+
+        <aside>
+            <nav class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13819.594319239475!2d-51.16555727497448!3d-30.011068429397852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519770c99b2d48d%3A0x69c01ce89ffe9c88!2sCristo%20Redentor%2C%20Porto%20Alegre%20-%20RS!5e0!3m2!1spt-BR!2sbr!4v1645284672783!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+            </nav>
+        </aside>
+
+    </section>
+
+    <script src="js/contato.js"></script>
+</body>
+</html>
